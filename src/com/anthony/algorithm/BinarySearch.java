@@ -8,11 +8,9 @@ import java.util.Arrays;
  */
 public class BinarySearch {
     public static int binarySearch(int[] a, int target) {
-
         Arrays.sort(a);
         int low = 0;
         int high = a.length - 1;
-
         while (low <= high) {
             int mid = (high + low) / 2;
             if (a[mid] > target) {

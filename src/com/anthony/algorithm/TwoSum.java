@@ -20,12 +20,12 @@ public class TwoSum {
         return new int[0];
     }
 
-    public static int[] newTwoSum(int[] a, int taget) {
+    public static int[] newTwoSum(int[] a, int target) {
         Map<Integer, Integer> map = new HashMap<>();
         int[] result = new int[2];
         for (int i = 0; i < a.length; i++) {
-            if (map.containsKey(taget - a[i])) {
-                result[0] = map.get(taget - a[i]);
+            if (map.containsKey(target - a[i])) {
+                result[0] = map.get(target - a[i]);
                 result[1] = i;
                 return result;
             }
