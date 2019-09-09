@@ -25,7 +25,6 @@ public class ReplaceSpace {
         return sb.toString();
     }
 
-
     public static void main(String[] args) {
         System.out.println(replaceSpace("We Are Happy"));
     }
