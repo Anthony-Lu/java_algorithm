@@ -7,7 +7,6 @@ import java.util.Stack;
  * Created by Anthony on 2019/9/12 0:14
  */
 public class MyQuene {
-
     private Stack<Integer> stack1 = new Stack<Integer>();
     private Stack<Integer> stack2 = new Stack<Integer>();
     public int pop(){
@@ -16,19 +15,7 @@ public class MyQuene {
         }
         return stack2.pop();
     }
-
     public void push(int element){
-
         stack1.push(element);
-    }
-
-    public static void main(String[] args) {
-
-        MyQuene myQuene = new MyQuene();
-
-        myQuene.push(1);
-        myQuene.push(2);
-        myQuene.push(3);
-        myQuene.pop();
     }
 }
