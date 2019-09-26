@@ -10,7 +10,7 @@ package com.anthony.algorithm;
  */
 public class FindGreatestSumOfSubArray {
     public int find(int[] array){
-        if(array.length == 0){
+        if(array == null || array.length == 0){
             return 0;
         }
         //初始时令current和max都为第一个元素的值
