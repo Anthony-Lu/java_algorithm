@@ -6,6 +6,7 @@ import java.util.Map;
 
 /**
  * Java解决Two Sum问题
+ * 题目描述：给定两个数等于数组中某一数之和，存在返回下标
  * Created by Anthony on 2018/10/22
  */
 public class TwoSum {

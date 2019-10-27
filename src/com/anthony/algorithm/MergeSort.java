@@ -8,7 +8,6 @@ import java.util.Arrays;
  * Created by Anthony on 2018/10/22
  */
 public class MergeSort {
-
     public static int[] sort(int a[], int low, int high) {
         int mid = (low + high) / 2;
         if (low < high) {
