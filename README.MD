@@ -17,3 +17,4 @@ Java版常见的算法和数据结构(主要来源于LeetCode、剑指offer以�
 - 求两个单链表的第一个公共结点 `FindFirstCommonNode`
 - 从尾到头打印链表 `PrintListFromTailToHead`
 - 字符串压缩 `CompressString`
+- 反转二叉树 `invertBinaryTree`
