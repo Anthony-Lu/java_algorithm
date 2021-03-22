@@ -18,3 +18,6 @@ Java版常见的算法和数据结构(主要来源于LeetCode、剑指offer以�
 - 从尾到头打印链表 `PrintListFromTailToHead`
 - 字符串压缩 `CompressString`
 - 反转二叉树 `invertBinaryTree`
+- 逆波兰表达式求值`EvalRPN`
+- 旋转数组的搜索 `RotateArraySearch`
+- 二叉树中序遍历 `InorderTraversal`
