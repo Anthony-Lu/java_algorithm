@@ -5,16 +5,16 @@ package com.anthony.algorithm;
  * Created by Anthony on 2019/9/8 23:57
  */
 public class ReverseStr {
-    public static String reverseStr1(String str){
-        if(str == null || str.length() == 1){
+    public static String reverseStr1(String str) {
+        if (str == null || str.length() == 1) {
             return str;
         }
         return reverseStr1(str.substring(1)) + str.charAt(0);
     }
 
-    public static String reverseStr2(String str){
+    public static String reverseStr2(String str) {
         String result = "";
-        if(str == null || str.length() == 0){
+        if (str == null || str.length() == 0) {
             return result;
         }
         char[] chars = str.toCharArray();

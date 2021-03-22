@@ -17,6 +17,7 @@ public class MergeSort {
         }
         return a;
     }
+
     private static void merge(int[] array, int start, int mid, int end) {
         int[] arr = new int[end + 1]; // 定义一个临时数组，用来存储排序后的结果
         int low = start; // 临时数组的索引
@@ -38,9 +39,10 @@ public class MergeSort {
             array[i] = arr[i];
         }
     }
+
     public static void main(String[] args) {
-        int[] a = {12,4,1,8,0,20};
-        int[] sort = sort(a, 0, a.length-1);
+        int[] a = {12, 4, 1, 8, 0, 20};
+        int[] sort = sort(a, 0, a.length - 1);
         System.out.println(Arrays.toString(sort));
     }
 }

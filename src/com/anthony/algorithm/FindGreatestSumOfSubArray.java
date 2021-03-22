@@ -9,8 +9,8 @@ package com.anthony.algorithm;
  * Created by Anthony on 2019/9/26 23:34
  */
 public class FindGreatestSumOfSubArray {
-    public int find(int[] array){
-        if(array == null || array.length == 0){
+    public int find(int[] array) {
+        if (array == null || array.length == 0) {
             return 0;
         }
         //初始时令current和max都为第一个元素的值
@@ -18,7 +18,7 @@ public class FindGreatestSumOfSubArray {
         int max = array[0];
         for (int i = 1; i < array.length; i++) {
             current = current > 0 ? current + array[i] : array[i];
-            if(max < current){
+            if (max < current) {
                 max = current;
             }
         }

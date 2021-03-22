@@ -6,14 +6,14 @@ package com.anthony.algorithm;
  * Created by Anthony on 2019/10/27 23:31
  */
 public class CompressString {
-    public static String compressString(String str){
+    public static String compressString(String str) {
         char first = str.charAt(0);
         int count = 1;
         StringBuilder sb = new StringBuilder();
-        for(int i = 1;i<str.length();i++){
+        for (int i = 1; i < str.length(); i++) {
             char second = str.charAt(i);
-            if(first == second){
-                count ++;
+            if (first == second) {
+                count++;
                 continue;
             }
             sb.append(count).append(first);
@@ -21,5 +21,11 @@ public class CompressString {
             count = 1;
         }
         return sb.append(count).append(first).toString();
+    }
+
+    public static void main(String[] args) {
+        String s = "aaabbccaadd";
+        String s1 = compressString(s);
+        System.out.println(s1);
     }
 }

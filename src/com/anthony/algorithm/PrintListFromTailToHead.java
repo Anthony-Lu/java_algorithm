@@ -1,4 +1,5 @@
 package com.anthony.algorithm;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,6 +29,7 @@ public class PrintListFromTailToHead {
         arrayList.add(listNode.val);
         return arrayList;
     }
+
     static class ListNode {
         public int val;
         public ListNode next;

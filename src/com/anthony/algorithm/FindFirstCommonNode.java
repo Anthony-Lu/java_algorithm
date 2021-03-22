@@ -1,6 +1,8 @@
 package com.anthony.algorithm;
 
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -11,6 +13,7 @@ public class FindFirstCommonNode {
     static class Node {
         Node next;
         int val;
+
         public Node(int val) {
             this.val = val;
         }
@@ -32,5 +35,20 @@ public class FindFirstCommonNode {
             node2 = node2.next;
         }
         return null;
+    }
+
+    public static void main(String[] args) {
+        String s = "afagvwgw232";
+        String s1 = s.replaceAll("[^(A-Za-z)]", "");
+        System.out.println(s1);
+
+
+        String[] a = {"1", "2"};
+        List<String> objects = Arrays.asList(a);
+
+        objects.forEach(e -> {
+            System.out.println(e);
+        });
+
     }
 }

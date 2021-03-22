@@ -3,18 +3,19 @@ package com.anthony.algorithm;
 /**
  * Created by Anthony on 2019/10/27 23:39
  */
-public class InvertBinaryTree  {
-    static class TreeNode{
+public class InvertBinaryTree {
+    static class TreeNode {
         TreeNode left;
         TreeNode right;
         int val;
+
         public TreeNode(int val) {
             this.val = val;
         }
     }
 
-    public static void invertBinaryTree(TreeNode root){
-        if(root == null){
+    public static void invertBinaryTree(TreeNode root) {
+        if (root == null) {
             return;
         }
         TreeNode node = root.left;

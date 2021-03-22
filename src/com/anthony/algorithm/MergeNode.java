@@ -7,29 +7,30 @@ package com.anthony.algorithm;
  * Created by Anthony on 2019/9/25 0:09
  */
 public class MergeNode {
-    static class Node{
+    static class Node {
         Node next;
         int val;
+
         public Node(int val) {
             this.val = val;
         }
     }
 
-    public Node merge(Node node1,Node node2){
-        if (node1 == null){
+    public Node merge(Node node1, Node node2) {
+        if (node1 == null) {
             return node2;
         }
         if (node2 == null) {
             return node1;
         }
         Node result;
-        if(node1.val <= node2.val){
+        if (node1.val <= node2.val) {
             result = node1;
-            node1.next = merge(node1.next,node2);
+            node1.next = merge(node1.next, node2);
 
-        }else{
+        } else {
             result = node2;
-            node2.next = merge(node1,node2.next);
+            node2.next = merge(node1, node2.next);
         }
         return result;
     }
@@ -49,8 +50,8 @@ public class MergeNode {
         node5.next = node6;
         MergeNode mergeNode = new MergeNode();
         Node newNode = mergeNode.merge(node1, node4);
-        while (newNode!=null){
-            System.out.println(newNode.val+"");
+        while (newNode != null) {
+            System.out.println(newNode.val + "");
             newNode = newNode.next;
         }
     }

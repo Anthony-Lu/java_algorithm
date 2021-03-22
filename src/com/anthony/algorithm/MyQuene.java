@@ -9,13 +9,15 @@ import java.util.Stack;
 public class MyQuene {
     private Stack<Integer> stack1 = new Stack<Integer>();
     private Stack<Integer> stack2 = new Stack<Integer>();
-    public int pop(){
-        while (!stack1.isEmpty()){
+
+    public int pop() {
+        while (!stack1.isEmpty()) {
             stack2.push(stack1.pop());
         }
         return stack2.pop();
     }
-    public void push(int element){
+
+    public void push(int element) {
         stack1.push(element);
     }
 }

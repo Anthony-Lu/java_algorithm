@@ -10,17 +10,17 @@ import java.util.List;
  * Created by Anthony on 2019/9/26 23:46
  */
 public class ReviseArrayOrder {
-    public void reviseOrder(int[] array){
-        if(array == null || array.length == 0){
-            return ;
+    public void reviseOrder(int[] array) {
+        if (array == null || array.length == 0) {
+            return;
         }
         List<Integer> oddNumberList = new ArrayList<>();
         List<Integer> evenNumberList = new ArrayList<>();
         for (int i = 0; i < array.length; i++) {
             int number = array[i];
-            if(number % 2 == 0){
+            if (number % 2 == 0) {
                 evenNumberList.add(number);
-            }else{
+            } else {
                 oddNumberList.add(number);
             }
         }
