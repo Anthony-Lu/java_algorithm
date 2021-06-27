@@ -10,6 +10,7 @@ import java.util.Map;
  * Created by Anthony on 2018/10/22
  */
 public class TwoSum {
+    //双重循环暴力破解
     public static int[] twoSum(int[] a, int target) {
         for (int i = 0; i < a.length; i++) {
             for (int j = i + 1; j < a.length; j++) {
@@ -22,6 +23,7 @@ public class TwoSum {
     }
 
     public static int[] newTwoSum(int[] a, int target) {
+        //借助哈希表
         Map<Integer, Integer> map = new HashMap<>();
         int[] result = new int[2];
         for (int i = 0; i < a.length; i++) {

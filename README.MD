@@ -21,3 +21,8 @@ Java版常见的算法和数据结构(主要来源于LeetCode、剑指offer以�
 - 逆波兰表达式求值`EvalRPN`
 - 旋转数组的搜索 `RotateArraySearch`
 - 二叉树中序遍历 `InorderTraversal`
+- 合并两个有序的单链表 `MergeTwoLists`
+- 二叉树的层次遍历 `LevelOrder`
+- 求二叉树最大深度  `MaxDepth`
+- 求两个单链表相交的交点 `GetIntersectionNode`
+- 反转二叉树 `InvertBinaryTree`

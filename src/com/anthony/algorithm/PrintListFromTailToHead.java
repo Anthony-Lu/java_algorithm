@@ -21,7 +21,7 @@ public class PrintListFromTailToHead {
     }
 
     public static List<Integer> printListFromTailToHead(ListNode listNode) {
-        List<Integer> arrayList = new ArrayList<Integer>();
+        List<Integer> arrayList = new ArrayList<>();
         if (listNode == null) {
             return arrayList;
         }
